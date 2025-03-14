@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=
+     , initial-scale=1.0">
+     <title>Connect</title>
+</head>
+<body>
+     <main>
+          <section>
+              <h2>Contact Me</h2>
+              <form>
+                  <label for="name">Full Name:</label><br>
+                  <input type="text" id="name" name="name" required><br>
+                  <label for="email">Email:</label><br>
+                  <input type="email" id="email" name="email" required><br>
+                  <label for="phone">Phone:</label><br>
+                  <input type="tel" id="phone" name="phone"><br>
+                  <label>Preferred Contact:</label><br>
+                  <input type="radio" id="email-pref" name="contact-pref" value="email">
+                  <label for="email-pref">Email</label>
+                  <input type="radio" id="phone-pref" name="contact-pref" value="phone">
+                  <label for="phone-pref">Phone</label><br>
+                  <label>Skills Known:</label><br>
+                  <input type="checkbox" id="html" name="skills" value="html">
+                  <label for="html">HTML</label>
+                  <input type="checkbox" id="css" name="skills" value="css">
+                  <label for="css">CSS</label><br>
+                  <label for="interest">Interest:</label><br>
+                  <select id="interest" name="interest">
+                      <option value="frontend">Frontend</option>
+                      <option value="backend">Backend</option>
+                      <option value="fullstack">Full Stack</option>
+                  </select><br>
+                  <label for="message">Message:</label><br>
+                  <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+                  <input type="submit" value="Submit" style="background-color: #333; color: white; padding: 5px;"> <!-- Inline CSS -->
+              </form>
+          </section>
+          <section class="author-info">
+               <p>Nandan Patil M - USN: 1MJ22IS065</p>
+          </section>
+      </main>
+</body>
+</html>
