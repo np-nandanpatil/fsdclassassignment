@@ -15,7 +15,7 @@ body {
 header nav#main-nav {
     background-color: #2d3748;
     padding: 1.5rem;
-    position: fixed;
+    position: absolute;
     width: 98%;
     top: 0;
     z-index: 1000;
@@ -140,7 +140,7 @@ td {
 }
 
 th {
-    background-color: #63b3ed;
+    background-color: #212324;
     color: #fff;
 }
 
@@ -270,8 +270,11 @@ footer {
     padding: 1.5rem;
     text-align: center;
     color: #e2e8f0;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+    border-radius: 15px;
+    width: 95%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 section.author-info {
