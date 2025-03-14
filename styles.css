@@ -1,7 +1,6 @@
-/* Reset */
 * {
     margin: 0;
-    margin-top: 10px;
+    margin-top: 0.05rem;
     padding: 0;
     box-sizing: border-box;
 }
@@ -13,7 +12,6 @@ body {
     line-height: 1.6;
 }
 
-/* Navigation */
 header nav#main-nav {
     background-color: #2d3748;
     padding: 1.5rem;
@@ -50,7 +48,6 @@ header{
     align-items: center;
 }
 
-/* Main content */
 main {
     max-width: 1200px;
     margin: 6rem auto 2rem;
@@ -60,7 +57,6 @@ main {
     align-items: center;
 }
 
-/* Sections */
 main section {
     background-color: #fff;
     padding: 2.5rem;
@@ -71,7 +67,6 @@ main section {
     max-width: 1000px;
 }
 
-/* Headings */
 h1 {
     color: #2d3748;
     font-size: 2.5rem;
@@ -86,13 +81,11 @@ h2 {
     text-align: center;
 }
 
-/* Paragraphs and text */
 p {
     margin: 1rem 0;
     text-align: center;
 }
 
-/* Lists */
 ol,
 ul {
     margin: 1rem 0 1rem 2rem;
@@ -123,7 +116,6 @@ dl dd {
     margin: 0.5rem 0 1rem 2rem;
 }
 
-/* Tables */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -160,7 +152,6 @@ tr:nth-child(even) {
     background-color: #f8fafc;
 }
 
-/* Forms */
 form#contact-form {
     display: grid;
     gap: 1.25rem;
@@ -218,7 +209,6 @@ form#contact-form legend {
     padding: 0 0.5rem;
 }
 
-/* Content cards */
 section.content-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -252,12 +242,10 @@ section.content-cards a:hover {
     text-decoration: underline;
 }
 
-/* Hero section */
 section.hero {
     text-align: center;
 }
 
-/* Try It section */
 section.try-it {
     text-align: center;
 }
@@ -277,7 +265,6 @@ section.try-it button:hover {
     background-color: #4299e1;
 }
 
-/* Footer */
 footer {
     background-color: #2d3748;
     padding: 1.5rem;
@@ -287,7 +274,6 @@ footer {
     border-top-right-radius: 12px;
 }
 
-/* Author info */
 section.author-info {
     text-align: center;
     color: #718096;
@@ -295,7 +281,6 @@ section.author-info {
     margin-top: 1rem;
 }
 
-/* Code blocks */
 pre,
 code {
     background-color: #f8fafc;
@@ -309,7 +294,6 @@ code {
     white-space: pre-wrap;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     header nav#main-nav ul {
         flex-direction: column;
