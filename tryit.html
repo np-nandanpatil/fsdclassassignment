@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Try It Out - HTML Editor</title>
+     <link rel="stylesheet" href="styles.css">
+     <style>
+          body {
+               margin: 0;
+               padding: 20px;
+               background-color: #fff;
+               display: flex;
+               flex-direction: column;
+               height: 100vh;
+          }
+
+          #editor-container {
+               flex: 1;
+               display: flex;
+               margin-bottom: 20px;
+               border-radius: 8px;
+               overflow: hidden;
+          }
+
+          #html-editor {
+               width: 50%;
+               height: 100%;
+               padding: 10px;
+               border: 1px solid #e2e8f0;
+               border-radius: 8px 0 0 8px;
+               resize: none;
+               font-family: 'Courier New', monospace;
+          }
+
+          #preview-iframe {
+               width: 50%;
+               height: 100%;
+               border: none;
+               border-left: 1px solid #e2e8f0;
+               border-radius: 0 8px 8px 0;
+          }
+
+          #practiced-btn {
+               background-color: #63b3ed;
+               color: #fff;
+               border: none;
+               padding: 10px 20px;
+               border-radius: 8px;
+               cursor: pointer;
+               font-size: 1rem;
+               transition: background-color 0.3s ease;
+               align-self: center;
+               margin-top: 10px;
+          }
+
+          #practiced-btn:hover {
+               background-color: #4299e1;
+          }
+     </style>
+</head>
+
+<body>
+     <div id="editor-container">
+          <textarea id="html-editor" placeholder="Write your HTML here..."></textarea>
+          <iframe id="preview-iframe"></iframe>
+     </div>
+     <button id="practiced-btn" onclick="window.close()">I Practiced</button>
+
+     <script>
+          const editor = document.getElementById('html-editor');
+          const preview = document.getElementById('preview-iframe');
+
+          editor.addEventListener('input', function () {
+               const htmlContent = editor.value;
+               preview.contentDocument.open();
+               preview.contentDocument.write(htmlContent);
+               preview.contentDocument.close();
+          });
+
+          editor.dispatchEvent(new Event('input'));
+     </script>
+</body>
+
+</html>

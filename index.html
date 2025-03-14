@@ -1,45 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>WebDev 101</title>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Fira+Code&display=swap"
+          rel="stylesheet">
+     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
      <header>
-          <h1>Welcome to Simple WebDev 101</h1>
-          <p>Hello fellow developer, you've landed in the simple website where you learn all the basic tags of HTML and a very brief intro to CSS as well.</p>
+          <nav id="main-nav">
+               <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="text-format.html">Text Format</a></li>
+                    <li><a href="list.html">Lists</a></li>
+                    <li><a href="tables.html">Tables</a></li>
+                    <li><a href="form.html">Connect</a></li>
+               </ul>
+          </nav>
      </header>
      <main>
           <section class="hero">
-               <p>Learn HTML, CSS and CSS by selecting the topics given below!</p>
+               <h1>Welcome to WebDev 101</h1>
+               <p>Hello fellow developer, explore the fundamentals of web development with interactive examples.</p>
           </section>
           <section class="content-cards">
                <article>
-                    <h2>Text formatting in HTML</h2>
-                    <p>See how text in how many different ways text can be formatted using tags in HTML</p>
+                    <h2>Text Formatting</h2>
+                    <p>Master various ways to style text using HTML tags</p>
                     <a href="text-format.html">Learn More</a>
                </article>
                <article>
-                    <h2>Lists in HTML</h2>
-                    <p>See how lists are written in HTML to showcase on a webpage.</p>
+                    <h2>Lists</h2>
+                    <p>Discover how to create organized lists in HTML</p>
                     <a href="list.html">Learn More</a>
                </article>
                <article>
-                    <h2>Tables in HTML</h2>
-                    <p>Demonstrates usage of table tags in HTML</p>
-                    <a href="table.html">Learn More</a>
+                    <h2>Tables</h2>
+                    <p>Learn to structure data with HTML tables</p>
+                    <a href="tables.html">Learn More</a>
                </article>
                <article>
-                    <h2>Contact me!</h2>
-                    <p>Feel free to contact me for collaborations and networking.</p>
+                    <h2>Connect</h2>
+                    <p>Get in touch for collaborations and networking</p>
                     <a href="form.html">Connect</a>
                </article>
           </section>
+          <section class="author-info">
+               <p>Nandan Patil M - USN: 1MJ22IS065</p>
+          </section>
+          <section class="try-it">
+               <p>Now that you know these basics, why don’t you try them out?</p>
+               <button onclick="openTryIt()">Try It Out</button>
+          </section>
      </main>
      <footer>
-          <p>&copy; 2025 Nandan Patil M. All rights reserved.</p>
+          <p>© 2025 Nandan Patil M. All rights reserved.</p>
      </footer>
+     <script>
+          function openTryIt() {
+               window.open('tryit.html', 'TryItWindow', 'width=800,height=600,scrollbars=yes');
+          }
+     </script>
 </body>
-</html>
 
+</html>
