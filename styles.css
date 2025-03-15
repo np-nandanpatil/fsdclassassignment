@@ -43,9 +43,8 @@ header nav#main-nav ul li a:hover {
     color: #63b3ed;
 }
 
-/* New hamburger menu styles */
 .hamburger {
-    display: none; /* Hidden by default on larger screens */
+    display: none; 
     font-size: 2rem;
     background: none;
     border: none;
@@ -280,7 +279,7 @@ section.try-it button:hover {
 }
 
 footer {
-    background-color: #2d3748;
+    background-color: #2d374860;
     padding: 1.5rem;
     text-align: center;
     color: #e2e8f0;
@@ -289,6 +288,8 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    text-shadow: black;
+    font-weight: bolder;
 }
 
 section.author-info {
@@ -311,15 +312,14 @@ code {
     white-space: pre-wrap;
 }
 
-/* Updated media query for responsive header */
 @media (max-width: 768px) {
     header nav#main-nav {
         padding: 1rem;
-        position: relative; /* Change to relative for better flow */
+        position: relative; 
     }
 
     header nav#main-nav ul {
-        display: none; /* Hide the menu by default on mobile */
+        display: none; 
         flex-direction: column;
         gap: 1.5rem;
         position: absolute;
@@ -332,7 +332,7 @@ code {
     }
 
     header nav#main-nav ul.active {
-        display: flex; /* Show menu when active */
+        display: flex; 
     }
 
     header nav#main-nav ul li {
@@ -341,7 +341,7 @@ code {
     }
 
     .hamburger {
-        display: block; /* Show hamburger on mobile */
+        display: block; 
     }
 
     main {
