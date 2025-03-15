@@ -42,7 +42,21 @@ header nav#main-nav ul li a:hover {
     background-color: #4a5568;
     color: #63b3ed;
 }
-header{
+
+/* New hamburger menu styles */
+.hamburger {
+    display: none; /* Hidden by default on larger screens */
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #e2e8f0;
+    cursor: pointer;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+}
+
+header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -297,10 +311,37 @@ code {
     white-space: pre-wrap;
 }
 
+/* Updated media query for responsive header */
 @media (max-width: 768px) {
+    header nav#main-nav {
+        padding: 1rem;
+        position: relative; /* Change to relative for better flow */
+    }
+
     header nav#main-nav ul {
+        display: none; /* Hide the menu by default on mobile */
         flex-direction: column;
         gap: 1.5rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #2d3748;
+        padding: 1rem 0;
+        border-radius: 0 0 15px 15px;
+    }
+
+    header nav#main-nav ul.active {
+        display: flex; /* Show menu when active */
+    }
+
+    header nav#main-nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger on mobile */
     }
 
     main {
