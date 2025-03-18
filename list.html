@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Lists</title>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Fira+Code&display=swap"
+          rel="stylesheet">
+     <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+     <header>
+          <nav id="main-nav">
+               <button class="hamburger">☰</button>
+               <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="text-format.html">Text Format</a></li>
+                    <li><a href="list.html">Lists</a></li>
+                    <li><a href="tables.html">Tables</a></li>
+                    <li><a href="form.html">Connect!</a></li>
+               </ul>
+          </nav>
+     </header>
+     <main>
+          <section>
+               <h1>HTML List Structures</h1>
+               <h2>Programming Languages</h2>
+               <ol type="a">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+               </ol>
+               <h2>Web Development Concepts</h2>
+               <ul class="custom-bullets">
+                    <li>Responsive Design</li>
+                    <li>Semantic HTML</li>
+                    <li>Accessibility</li>
+               </ul>
+               <h2>Web Tech Definitions</h2>
+               <dl>
+                    <dt>HTML</dt>
+                    <dd>A markup language for creating web pages</dd>
+                    <dt>CSS</dt>
+                    <dd>A stylesheet language for styling web pages</dd>
+                    <dt>JavaScript</dt>
+                    <dd>A programming language for interactive web pages</dd>
+               </dl>
+               <h2>Development Topics</h2>
+               <ul>
+                    <li>Frontend Development
+                         <ul>
+                              <li>HTML
+                                   <ul>
+                                        <li>Semantic Tags</li>
+                                        <li>Forms</li>
+                                   </ul>
+                              </li>
+                              <li>CSS
+                                   <ul>
+                                        <li>Selectors</li>
+                                        <li>Layout</li>
+                                   </ul>
+                              </li>
+                         </ul>
+                    </li>
+                    <li>Backend Development
+                         <ul>
+                              <li>Node.js</li>
+                              <li>Databases</li>
+                         </ul>
+                    </li>
+               </ul>
+          </section>
+          <section class="author-info">
+               <p>Nandan Patil M - USN: 1MJ22IS065</p>
+          </section>
+          <section class="try-it">
+               <p>Now that you know these list tags, why don’t you try them out?</p>
+               <button onclick="openTryIt()">Try It Out</button>
+          </section>
+     </main>
+     <!-- script to open tryit  -->
+     <script>
+          function openTryIt() {
+               window.open('tryit.html', 'TryItWindow', 'width=800,height=600,scrollbars=yes');
+          }
+     </script>
+     <!-- separate scrcipt for hamburger (responsive related) -->
+     <script>
+          document.addEventListener('DOMContentLoaded', function () {
+               const hamburger = document.querySelector('.hamburger');
+               const navUl = document.querySelector('#main-nav ul');
+
+               if (hamburger && navUl) {
+                    hamburger.addEventListener('click', function () {
+                         navUl.classList.toggle('active');
+                    });
+               } else {
+                    console.error('Hamburger or navUl not found');
+               }
+          });
+     </script>
+</body>
+
+</html>

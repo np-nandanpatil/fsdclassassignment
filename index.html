@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>WebDev 101</title>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Fira+Code&display=swap"
+          rel="stylesheet">
+     <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+     <header>
+          <nav id="main-nav">
+               <button class="hamburger">☰</button>
+               <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="text-format.html">Text Format</a></li>
+                    <li><a href="list.html">Lists</a></li>
+                    <li><a href="tables.html">Tables</a></li>
+                    <li><a href="form.html">Connect!</a></li>
+               </ul>
+          </nav>
+     </header>
+     <main>
+
+
+          <style>
+               .marquee-container {
+                    background-color: #f0f0f0;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+               }
+          </style>
+          <div class="marquee-container">
+               <marquee direction="left" scrollamount="5" scrolldelay="60" loop="-1">
+                    <strong> Hello Spidy..!! I mean Web Developer 😅 </strong>
+               </marquee>
+          </div><br>
+
+
+          <section class="hero">
+               <h1>Welcome to WebDev 101</h1>
+               <p>Hello fellow developer, explore the fundamentals of web development with interactive examples.</p>
+          </section>
+          <section class="content-cards">
+               <article>
+                    <h2>Text Formatting</h2>
+                    <p>Master various ways to style text using HTML tags</p>
+                    <a href="text-format.html">Learn More</a>
+               </article>
+               <article>
+                    <h2>Lists</h2>
+                    <p>Discover how to create organized lists in HTML</p>
+                    <a href="list.html">Learn More</a>
+               </article>
+               <article>
+                    <h2>Tables</h2>
+                    <p>Learn to structure data with HTML tables</p>
+                    <a href="tables.html">Learn More</a>
+               </article>
+               <article>
+                    <h2>Connect</h2>
+                    <p>Get in touch for collaborations and networking</p>
+                    <a href="form.html">Connect</a>
+               </article>
+          </section>
+          <section class="author-info">
+               <p>Nandan Patil M - USN: 1MJ22IS065</p>
+          </section>
+          <section class="try-it">
+               <p>Now that you know these basics, why don’t you try them out?</p>
+               <button onclick="openTryIt()">Try It Out</button>
+          </section>
+     </main>
+     <footer>
+          <p>© 2025 Nandan Patil M. No rights reserved.</p>
+     </footer>
+
+     <!-- script to open tryit  -->
+     <script>
+          function openTryIt() {
+               window.open('tryit.html', 'TryItWindow', 'width=800,height=600,scrollbars=yes');
+          }
+     </script>
+     <!-- separate scrcipt for hamburger (responsive related) -->
+     <script>
+          document.addEventListener('DOMContentLoaded', function () {
+               const hamburger = document.querySelector('.hamburger');
+               const navUl = document.querySelector('#main-nav ul');
+
+               if (hamburger && navUl) {
+                    hamburger.addEventListener('click', function () {
+                         navUl.classList.toggle('active');
+                    });
+               } else {
+                    console.error('Hamburger or navUl not found');
+               }
+          });
+     </script>
+</body>
+
+</html>

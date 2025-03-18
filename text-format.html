@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Text Format</title>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Fira+Code&display=swap"
+          rel="stylesheet">
+     <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+     <header>
+          <nav id="main-nav">
+               <button class="hamburger">☰</button>
+               <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="text-format.html">Text Format</a></li>
+                    <li><a href="list.html">Lists</a></li>
+                    <li><a href="tables.html">Tables</a></li>
+                    <li><a href="form.html">Connect!</a></li>
+               </ul>
+          </nav>
+     </header>
+     <main>
+          <section>
+               <h1>Text Formatting Basics</h1>
+               <p>Learn how to style text effectively in HTML</p>
+               <h2>Heading Levels</h2>
+               <p>Headings range from &lt;h1&gt; (largest) to &lt;h6&gt; (smallest)</p>
+               <pre>&lt;h1&gt;This is heading 1&lt;/h1&gt;</pre>
+
+               <h2>Text Styling</h2>
+               <p><strong>Bold text</strong> and <em>italic text</em> for emphasis</p>
+               <p><u>&lt;u&gt;Underlined text&lt;/u&gt;</u> for highlights</p>
+
+               <h2>Special Tags</h2>
+               <p>The &lt;abbr&gt;<abbr title="Hypertext Markup Language">HTML</abbr>&lt;/abbr&gt; specification</p>
+               <p>&lt;dfn&gt;<dfn>CSS</dfn>&lt;/dfn&gt; stands for Cascading Style Sheets</p>
+               <!-- <p>Event on <time datetime="2025-03-08">March 8, 2025</time></p> -->
+
+               <h2>Code Display</h2>
+               <pre>&lt;pre&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Title&lt;/title&gt;
+    &lt;/head&gt;
+&lt;/html&gt;
+&lt;/pre&gt;
+            </pre>
+               &lt;code&gt;<code>&lt;div&gt;This is a code block&lt;/div&gt;</code>&lt;/code&gt;
+
+               <h2>Contact Info</h2>
+               &lt;address&gt;<address>
+                    Room 212, Number1 Hostel<br>
+                    MVJ College of Engineering<br>
+                    Channasandra, Bangalore - 560067<br>
+                    <a href="mailto:1mj22is065@mvjce.edu.in">1mj22is065@mvjce.edu.in</a>
+               </address>&lt;/address&gt;
+          </section>
+          <section class="author-info">
+               <p>Nandan Patil M - USN: 1MJ22IS065</p>
+          </section>
+          <section class="try-it">
+               <p>Now that you know these text formatting tags, why don’t you try them out?</p>
+               <button onclick="openTryIt()">Try It Out</button>
+          </section>
+     </main>
+
+     <!-- script to open tryit  -->
+     <script>
+          function openTryIt() {
+               window.open('tryit.html', 'TryItWindow', 'width=800,height=600,scrollbars=yes');
+          }
+     </script>
+
+     <!-- separate scrcipt for hamburger (responsive related) -->
+     <script>
+          document.addEventListener('DOMContentLoaded', function () {
+               const hamburger = document.querySelector('.hamburger');
+               const navUl = document.querySelector('#main-nav ul');
+
+               if (hamburger && navUl) {
+                    hamburger.addEventListener('click', function () {
+                         navUl.classList.toggle('active');
+                    });
+               } else {
+                    console.error('Hamburger or navUl not found');
+               }
+          });
+     </script>
+</body>
+
+</html>

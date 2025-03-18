@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Fira+Code&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav id="main-nav">
+            <button class="hamburger">☰</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="text-format.html">Text Format</a></li>
+                <li><a href="list.html">Lists</a></li>
+                <li><a href="tables.html">Tables</a></li>
+                <li><a href="form.html">Connect!</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- <h2>Tags used in this page</h2>
+        <p>&lt;table&gt;</p> -->
+        <section>
+            <h1>Browser Compatibility Tables</h1>
+            <table>
+                <caption>Browser Support</caption>
+                <thead>
+                    <tr>
+                        <th>Browser</th>
+                        <th>Support</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Chrome</td>
+                        <td>Full</td>
+                    </tr>
+                    <tr>
+                        <td>Firefox</td>
+                        <td>Full</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Data as of 2025</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <h2>Element Support Across Platforms</h2>
+            <table>
+                <caption>HTML Element Compatibility</caption>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Element</th>
+                        <th colspan="2">Support</th>
+                    </tr>
+                    <tr>
+                        <th>Desktop</th>
+                        <th>Mobile</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>header</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>footer</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Data as of 2025</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section class="author-info">
+            <p>Nandan Patil M - USN: 1MJ22IS065</p>
+        </section>
+        <section class="try-it">
+            <p>Now that you know these table tags, why don’t you try them out?</p>
+            <button onclick="openTryIt()">Try It Out</button>
+        </section>
+    </main>
+
+    <!-- script to open tryit  -->
+    <script>
+        function openTryIt() {
+            window.open('tryit.html', 'TryItWindow', 'width=800,height=600,scrollbars=yes');
+        }
+    </script>
+
+    <!-- separate scrcipt for hamburger (responsive related) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburger = document.querySelector('.hamburger');
+            const navUl = document.querySelector('#main-nav ul');
+
+            if (hamburger && navUl) {
+                hamburger.addEventListener('click', function () {
+                    navUl.classList.toggle('active');
+                });
+            } else {
+                console.error('Hamburger or navUl not found');
+            }
+        });
+    </script>
+</body>
+
+</html>
